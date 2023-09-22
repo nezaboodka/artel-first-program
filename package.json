@@ -13,6 +13,7 @@
   "dependencies": {
   },
   "devDependencies": {
+    "artel": "0.4.185"
   },
   "browserslist": {
     "production": [

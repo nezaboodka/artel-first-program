@@ -6,11 +6,15 @@
     "**/node_modules/": true,
     "**/build/": true,
     "**/Build/": true,
+    "**/сборка/": true,
+    "**/Сборка/": true,
   },
   "files.watcherExclude": {
     "**/node_modules/": true,
     "**/build/": true,
     "**/Build/": true,
+    "**/сборка/": true,
+    "**/Сборка/": true,
   },
   "cSpell.ignorePaths": [
     "node_modules",
