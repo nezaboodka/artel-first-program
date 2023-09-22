@@ -1,0 +1,29 @@
+// Place your settings in this file to overwrite default and user settings.
+{
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "files.exclude": {
+    "**/node_modules/": true,
+    "**/build/": true,
+    "**/Build/": true,
+  },
+  "files.watcherExclude": {
+    "**/node_modules/": true,
+    "**/build/": true,
+    "**/Build/": true,
+  },
+  "cSpell.ignorePaths": [
+    "node_modules",
+    "**/node_modules",
+    "**/node_modules/**",
+    "node_modules/**",
+    "vscode-extension",
+    ".git",
+    "CODE_OF_CONDUCT.md",
+    "package-lock.json",
+    "yarn.lock",
+  ],
+  "cSpell.words": [
+    "verstak"
+  ]
+}
