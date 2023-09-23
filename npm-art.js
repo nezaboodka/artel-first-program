@@ -30,5 +30,5 @@ if (!isUpToDate) {
 else
   console.log("\n")
 
-const art = require("artel/build/art.js")
+const cli = require("artel/build/artel-cli.js")
 // art.awaiter.then(() => console.log("\n\n"), () => console.log("\n\n"))
