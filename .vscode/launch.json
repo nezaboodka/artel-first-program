@@ -8,7 +8,7 @@
       "name": "Запуск",
       "type": "node",
       "request": "launch",
-      "program": "${workspaceFolder}/.launch.js",
+      "program": "${workspaceFolder}/@",
       "runtimeArgs": [
         // "--inspect"
       ],
