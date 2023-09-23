@@ -5,7 +5,7 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "Отладка текущего пакета",
+      "name": "Запуск программы в текущей папке",
       "type": "node",
       "request": "launch",
       "program": "${workspaceFolder}/node_modules/artel/build/art.js",
