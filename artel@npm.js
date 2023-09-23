@@ -1,11 +1,12 @@
+
 const fs = require("fs")
 const cp = require("child_process")
-
 const nodeModulesPath = "node_modules"
+const packageJsonPath = "package.json"
+const packageLockJsonPath = "package-lock.json"
+
 let isUpToDate = fs.existsSync(nodeModulesPath)
 if (isUpToDate) {
-  const packageJsonPath = "package.json"
-  const packageLockJsonPath = "package-lock.json"
   const m = fs.statSync(nodeModulesPath)
   const p1 = fs.statSync(packageJsonPath)
   const p2 = fs.statSync(packageLockJsonPath)
@@ -26,8 +27,10 @@ else
   console.log("\n")
 
 const cli = require("artel/build/artel-cli.js")
-cli.awaiter.then(result => {
-  // do nothing
-}, error => {
-  // do nothing
-})
+cli.awaiter.then(
+  result => {
+    // do nothing
+  },
+  error => {
+    // do nothing
+  })
