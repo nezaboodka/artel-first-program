@@ -5,7 +5,24 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "Launch Artel",
+      "name": "Отладка текущего пакета",
+      "type": "node",
+      "request": "launch",
+      "program": "${workspaceFolder}/node_modules/artel/build/art.js",
+      "args": [
+        "запустить",
+        "${relativeFileDirname}",
+        "${workspaceFolder}/build/${relativeFileDirname}"
+      ],
+      "console": "integratedTerminal",
+      "sourceMaps": true,
+      "smartStep": true,
+      "skipFiles": [
+        "<node_internals>/**/*.js"
+      ],
+    },
+    {
+      "name": "Запуск через расширение к VS Code",
       "type": "artel",
       "request": "launch",
       "project": "${workspaceFolder}/${relativeFileDirname}"
