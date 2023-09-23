@@ -8,7 +8,7 @@
       "name": "Запуск",
       "type": "node",
       "request": "launch",
-      "program": "npm-art",
+      "program": "artel@npm",
       "runtimeArgs": [
         // "--inspect"
       ],
