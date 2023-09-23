@@ -8,7 +8,7 @@
       "name": "Запуск",
       "type": "node",
       "request": "launch",
-      "program": "${workspaceFolder}/.vscode/artel-launcher.js",
+      "program": "${workspaceFolder}/.launch.js",
       "runtimeArgs": [
         // "--inspect"
       ],
