@@ -1,0 +1,10 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Install node modules automatically",
+      "type": "shell",
+      "command": "node .vscode/auto-install.mjs",
+    },
+  ]
+}

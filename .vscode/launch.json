@@ -8,6 +8,7 @@
       "name": "Запуск",
       "type": "node",
       "request": "launch",
+      "preLaunchTask": "Install node modules automatically",
       "program": "${workspaceFolder}/node_modules/artel/build/art.js",
       "args": [
         "пуск",
