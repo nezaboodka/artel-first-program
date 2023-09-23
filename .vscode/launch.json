@@ -5,12 +5,12 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "Запуск программы в текущей папке",
+      "name": "Запуск",
       "type": "node",
       "request": "launch",
       "program": "${workspaceFolder}/node_modules/artel/build/art.js",
       "args": [
-        "запустить",
+        "пуск",
         "${relativeFileDirname}",
         "${workspaceFolder}/build/${relativeFileDirname}"
       ],
@@ -22,7 +22,7 @@
       ],
     },
     {
-      "name": "Запуск через расширение к VS Code",
+      "name": "Запуск (через расширение VS Code)",
       "type": "artel",
       "request": "launch",
       "project": "${workspaceFolder}/${relativeFileDirname}"

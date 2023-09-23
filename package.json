@@ -9,11 +9,12 @@
     "url": "https://github.com/nezaboodka/artel-verstak-demo.git"
   },
   "scripts": {
+    "упаковать": "артель упаковать исходники/приложение сборка"
   },
   "dependencies": {
   },
   "devDependencies": {
-    "artel": "0.4.189"
+    "artel": "0.4.190"
   },
   "browserslist": {
     "production": [
