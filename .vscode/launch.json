@@ -18,6 +18,7 @@
         "${workspaceFolder}/.сборка/${relativeFileDirname}"
       ],
       "console": "integratedTerminal",
+      "autoAttachChildProcesses": false,
       "sourceMaps": true,
       "smartStep": true,
       "skipFiles": [
