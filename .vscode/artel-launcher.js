@@ -11,10 +11,10 @@ if (isUpToDate) {
   const p1 = fs.statSync(packageJsonPath)
   const p2 = fs.statSync(packageLockJsonPath)
   isUpToDate =
-    m.ctime >= p1.ctime &&
-    m.ctime >= p2.ctime &&
     m.mtime >= p1.mtime &&
-    m.mtime >= p2.mtime
+    m.mtime >= p2.mtime &&
+    m.mtime >= p1.ctime &&
+    m.mtime >= p2.ctime
 }
 
 if (!isUpToDate) {
@@ -22,6 +22,8 @@ if (!isUpToDate) {
   cp.spawnSync('npm', ["install"], {
     stdio: [process.stdin, process.stdout, process.stderr],
     shell: true })
+  const now = new Date()
+  fs.utimesSync(nodeModulesPath, now, now)
 }
 
 require("artel/build/art.js")
