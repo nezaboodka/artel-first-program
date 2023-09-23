@@ -29,7 +29,7 @@
       "name": "Запуск (через VS Code Extension)",
       "type": "artel",
       "request": "launch",
-      "project": "${relativeFileDirname}"
+      "project": "${workspaceFolder}/${relativeFileDirname}"
     }
   ]
 }
