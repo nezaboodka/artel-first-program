@@ -7,4 +7,4 @@
 - Visual Studio Code 1.80+ ([ссылка](https://code.visualstudio.com/)).
 - Расширение Артель для VS Code 0.4.190+ ([ссылка](https://marketplace.visualstudio.com/items?itemName=nezaboodka.artel-vscode))
 
-![Программа](картинка.jpg?raw=true)
+![Программа](моя-программа/картинка.jpg?raw=true)
