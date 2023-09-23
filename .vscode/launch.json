@@ -26,7 +26,7 @@
       ],
     },
     {
-      "name": "Запуск (через расширение VS Code)",
+      "name": "Запуск (через VS Code Extension)",
       "type": "artel",
       "request": "launch",
       "project": "${relativeFileDirname}"
