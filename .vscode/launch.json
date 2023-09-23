@@ -12,7 +12,7 @@
       "args": [
         "пуск",
         "${relativeFileDirname}",
-        "${workspaceFolder}/build/${relativeFileDirname}"
+        "${workspaceFolder}/.сборка/${relativeFileDirname}"
       ],
       "console": "integratedTerminal",
       "sourceMaps": true,
