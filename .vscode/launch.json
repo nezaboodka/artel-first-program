@@ -16,7 +16,7 @@
         "${relativeFileDirname}",
         "${workspaceFolder}/.сборка/${relativeFileDirname}"
       ],
-      "console": "externalTerminal",
+      "console": "integratedTerminal",
       "sourceMaps": true,
       "smartStep": true,
       "skipFiles": [
