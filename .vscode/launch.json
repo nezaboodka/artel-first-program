@@ -8,14 +8,14 @@
       "name": "Запуск",
       "type": "node",
       "request": "launch",
-      "program": "${workspaceFolder}/@",
+      "program": "@",
       "runtimeArgs": [
         // "--inspect"
       ],
       "args": [
         "пуск",
         "${relativeFileDirname}",
-        "${workspaceFolder}/.сборка/${relativeFileDirname}"
+        ".сборка/${relativeFileDirname}"
       ],
       "console": "integratedTerminal",
       "autoAttachChildProcesses": false,
@@ -29,7 +29,7 @@
       "name": "Запуск (через расширение VS Code)",
       "type": "artel",
       "request": "launch",
-      "project": "${workspaceFolder}/${relativeFileDirname}"
+      "project": "${relativeFileDirname}"
     }
   ]
 }
