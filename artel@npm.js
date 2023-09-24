@@ -15,13 +15,13 @@ if (isUpToDate) {
 }
 
 if (!isUpToDate) {
-  console.log("\n=======================================\nNode modules installation:")
+  console.log("\nNode modules installation:")
   cp.spawnSync('npm', ["install"], {
     stdio: [process.stdin, process.stdout, process.stderr],
     shell: true })
   const now = new Date()
   fs.utimesSync(nodeModulesPath, now, now)
-  console.log("\nNode modules installation is completed.\n=======================================\n")
+  console.log("\nNode modules installation is completed.\n")
 }
 else
   console.log("\n")
