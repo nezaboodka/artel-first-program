@@ -1,17 +1,21 @@
 
+const AUTO_INSTALL = true // auto install if node_modules doesn't exist
+const AUTO_UPDATE = true  // auto update if package.json is changed
+
 const fs = require("fs")
 const cp = require("child_process")
 const nodeModulesPath = "node_modules"
 const packageJsonPath = "package.json"
 const packageLockJsonPath = "package-lock.json"
 
-let isUpToDate = fs.existsSync(nodeModulesPath)
+let isUpToDate = !AUTO_INSTALL || fs.existsSync(nodeModulesPath)
 if (isUpToDate) {
   const m = fs.statSync(nodeModulesPath)
   const p1 = fs.statSync(packageJsonPath)
   const p2 = fs.statSync(packageLockJsonPath)
-  isUpToDate = m.mtime >= p1.mtime && m.mtime >= p2.mtime &&
-    m.mtime >= p1.ctime && m.mtime >= p2.ctime
+  isUpToDate = !AUTO_UPDATE || (
+    m.mtime >= p1.mtime && m.mtime >= p2.mtime &&
+    m.mtime >= p1.ctime && m.mtime >= p2.ctime)
 }
 
 if (!isUpToDate) {
