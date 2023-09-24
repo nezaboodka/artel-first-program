@@ -1,7 +1,7 @@
 {
   "name": "artel-first-program",
   "description": "Первая программа на языке Артель",
-  "devDependencies": { "artel": "0.4.195" },
+  "devDependencies": { "artel": "0.4.196" },
   "scripts": {
     "пуск": "node artel@npm пуск моя-программа .сборка",
     "собрать": "node artel@npm собрать моя-программа .сборка",
