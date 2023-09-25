@@ -3,16 +3,12 @@ const AUTO_INSTALL = true // auto install if node_modules doesn't exist
 const AUTO_UPDATE = true  // auto update if package.json is changed
 
 const fs = require("fs")
-const cp = require("child_process")
-const nodeModulesPath = "node_modules"
-const packageJsonPath = "package.json"
-const packageLockJsonPath = "package-lock.json"
 
-let isUpToDate = !AUTO_INSTALL || fs.existsSync(nodeModulesPath)
+let isUpToDate = !AUTO_INSTALL || fs.existsSync("node_modules")
 if (isUpToDate) {
-  const m = fs.statSync(nodeModulesPath)
-  const p1 = fs.statSync(packageJsonPath)
-  const p2 = fs.statSync(packageLockJsonPath)
+  const m = fs.statSync("node_modules")
+  const p1 = fs.statSync("package.json")
+  const p2 = fs.statSync("package-lock.json")
   isUpToDate = !AUTO_UPDATE || (
     m.mtime >= p1.mtime && m.mtime >= p2.mtime &&
     m.mtime >= p1.ctime && m.mtime >= p2.ctime)
@@ -20,11 +16,11 @@ if (isUpToDate) {
 
 if (!isUpToDate) {
   console.log("\nNode modules installation:")
-  cp.spawnSync('npm', ["install"], {
+  require("child_process").spawnSync('npm', ["install"], {
     stdio: [process.stdin, process.stdout, process.stderr],
     shell: true })
   const now = new Date()
-  fs.utimesSync(nodeModulesPath, now, now)
+  fs.utimesSync("node_modules", now, now)
   console.log("\nNode modules installation is completed.\n")
 }
 else
