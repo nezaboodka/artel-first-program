@@ -15,7 +15,7 @@
       "args": [
         "пуск",
         "${relativeFileDirname}",
-        ".сборка/${relativeFileDirname}"
+        "!сборка/${relativeFileDirname}"
       ],
       "console": "integratedTerminal",
       "autoAttachChildProcesses": false,
