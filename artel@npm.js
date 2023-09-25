@@ -26,11 +26,6 @@ if (!isUpToDate) {
 else
   console.log("\n")
 
-const cli = require("artel/build/artel-cli.js")
-cli.awaiter.then(
-  result => {
-    // do nothing
-  },
-  error => {
-    // do nothing
-  })
+require("artel/build/artel-cli.js").awaiter.then(
+  result => { /* do nothing */ },
+  error => { /* do nothing */ })
