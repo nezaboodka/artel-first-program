@@ -4,14 +4,14 @@
     {
       "label": "Запустить без отладки (артель пуск)",
       "type": "shell",
-      "command": "node n-artel.js пуск моя-программа !сборка",
+      "command": "node n-artel.js пуск моя-программа .сборка",
       "group": "build",
       "problemMatcher": []
     },
     {
       "label": "Собрать проект (артель собрать)",
       "type": "shell",
-      "command": "node n-artel.js собрать моя-программа !сборка",
+      "command": "node n-artel.js собрать моя-программа .сборка",
       "group": "build",
     },
     {
