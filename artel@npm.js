@@ -1,8 +1,8 @@
 
+const fs = require("fs")
+
 const AUTO_INSTALL = true // auto install if node_modules doesn't exist
 const AUTO_UPDATE = true  // auto update if package.json is changed
-
-const fs = require("fs")
 
 let isUpToDate = !AUTO_INSTALL || fs.existsSync("node_modules")
 if (isUpToDate) {
