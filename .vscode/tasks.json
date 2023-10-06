@@ -5,7 +5,7 @@
       "label": "Запустить без отладки (артель пуск)",
       "group": "build",
       "type": "shell",
-      "command": "node n-artel.js пуск ../МояПрограмма ./package/МояПрограмма",
+      "command": "node n-artel.js пуск ../ПримерПрограммы ./executable/ПримерПрограммы",
       "options": {
         "cwd": ".сборка"
       },
@@ -15,7 +15,7 @@
       "label": "Собрать проект (артель собрать)",
       "group": "build",
       "type": "shell",
-      "command": "node n-artel.js собрать ../МояПрограмма ./package/МояПрограмма",
+      "command": "node n-artel.js собрать ../ПримерПрограммы ./executable/ПримерПрограммы",
       "options": {
         "cwd": ".сборка"
       },
