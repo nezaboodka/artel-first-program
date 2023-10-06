@@ -8,14 +8,15 @@
       "name": "Запуск",
       "type": "node",
       "request": "launch",
+      "cwd": "${workspaceFolder}/.сборка",
       "program": "n-artel",
       "runtimeArgs": [
         // "--inspect"
       ],
       "args": [
         "пуск",
-        "${relativeFileDirname}",
-        ".сборка/${relativeFileDirname}"
+        "../${relativeFileDirname}",
+        "${relativeFileDirname}"
       ],
       "console": "integratedTerminal",
       "autoAttachChildProcesses": false,
