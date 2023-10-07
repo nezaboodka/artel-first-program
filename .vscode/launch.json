@@ -14,7 +14,7 @@
         // "--inspect"
       ],
       "args": [
-        "пуск",
+        "launch",
         "../${relativeFileDirname}",
         "Executable/${relativeFileDirname}"
       ],
