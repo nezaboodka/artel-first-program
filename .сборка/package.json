@@ -3,12 +3,12 @@
   "description": "Первая программа на языке Артель",
   "devDependencies":
   {
-    "artel": "0.4.220"
+    "artel": "0.4.222"
   },
   "scripts":
   {
     "пуск": "node n-artel launch .. ./Executable",
     "собрать": "node n-artel build .. ./Executable",
-    "настроить": "npm install"
+    "скачать-пакеты": "npm install"
   }
 }
