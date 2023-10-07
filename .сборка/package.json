@@ -7,8 +7,8 @@
   },
   "scripts":
   {
-    "пуск": "node n-artel пуск ../ПримерПрограммы ./executable",
-    "собрать": "node n-artel собрать ../ПримерПрограммы ./executable",
+    "пуск": "node n-artel пуск .. ./Executable",
+    "собрать": "node n-artel собрать .. ./Executable",
     "настроить": "npm install"
   }
 }
