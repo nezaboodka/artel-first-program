@@ -3,7 +3,7 @@
   "description": "Первая программа на языке Артель",
   "devDependencies":
   {
-    "artel": "0.4.217"
+    "artel": "0.4.219"
   },
   "scripts":
   {

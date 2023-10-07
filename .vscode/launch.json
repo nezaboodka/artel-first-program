@@ -16,7 +16,7 @@
       "args": [
         "пуск",
         "../${relativeFileDirname}",
-        "${relativeFileDirname}"
+        "executable/${relativeFileDirname}"
       ],
       "console": "integratedTerminal",
       "autoAttachChildProcesses": false,
