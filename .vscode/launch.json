@@ -9,14 +9,9 @@
       "type": "node",
       "request": "launch",
       "cwd": "${workspaceFolder}/.сборка",
-      "program": "n-artel",
+      "program": "Executable/launch.mjs",
       "runtimeArgs": [
-        // "--inspect-brk"
-      ],
-      "args": [
-        "launch",
-        "../${relativeFileDirname}",
-        "Executable/${relativeFileDirname}"
+        "--inspect-brk"
       ],
       "console": "integratedTerminal",
       "autoAttachChildProcesses": false,
@@ -25,6 +20,7 @@
       "skipFiles": [
         "<node_internals>/**"
       ],
+      "preLaunchTask": "Собрать проект (артель собрать)",
     },
     {
       "name": "Запуск (через VS Code Extension)",
