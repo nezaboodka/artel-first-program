@@ -1,5 +1,6 @@
 {
   "name": "artel-first-program",
+  "type": "module",
   "description": "Первая программа на языке Артель",
   "devDependencies":
   {

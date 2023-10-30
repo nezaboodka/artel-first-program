@@ -1,5 +1,6 @@
 
-const fs = require("fs")
+import * as fs from "fs"
+import * as cp from "child_process"
 
 const AUTO_INSTALL = true // auto install if node_modules doesn't exist
 const AUTO_UPDATE = true  // auto update if package.json is changed
@@ -16,7 +17,7 @@ if (isUpToDate) {
 
 if (!isUpToDate) {
   console.log("\nNode modules installation:")
-  require("child_process").spawnSync('npm', ["install"], {
+  cp.spawnSync('npm', ["install"], {
     stdio: [process.stdin, process.stdout, process.stderr],
     shell: true })
   const now = new Date()
@@ -26,6 +27,5 @@ if (!isUpToDate) {
 else
   console.log("\n")
 
-require("artel/build/artel-cli.js").awaiter.then(
-  result => { /* do nothing */ },
-  error => { /* do nothing */ })
+import * as main from "artel/build/artel-cli.js"
+await main.awaiter
