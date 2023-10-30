@@ -27,5 +27,5 @@ if (!isUpToDate) {
 else
   console.log("\n")
 
-import * as main from "artel/build/artel-cli.js"
-await main.awaiter
+await import("artel/build/artel-cli.js")
+
