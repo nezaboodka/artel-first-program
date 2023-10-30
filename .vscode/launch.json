@@ -11,7 +11,7 @@
       "cwd": "${workspaceFolder}/.сборка",
       "program": "n-artel",
       "runtimeArgs": [
-        "--inspect-brk"
+        // "--inspect-brk"
       ],
       "args": [
         "launch",
