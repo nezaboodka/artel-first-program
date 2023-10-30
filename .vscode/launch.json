@@ -11,7 +11,7 @@
       "cwd": "${workspaceFolder}/.сборка",
       "program": "n-artel",
       "runtimeArgs": [
-        // "--inspect"
+        "--inspect-brk"
       ],
       "args": [
         "launch",
@@ -23,7 +23,7 @@
       "sourceMaps": true,
       "smartStep": true,
       "skipFiles": [
-        "<node_internals>/**/*.js"
+        "<node_internals>/**"
       ],
     },
     {
