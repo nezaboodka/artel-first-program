@@ -10,9 +10,6 @@
       "request": "launch",
       "cwd": "${workspaceFolder}/.сборка",
       "program": "Executable/launch.mjs",
-      "runtimeArgs": [
-        "--inspect-brk"
-      ],
       "console": "integratedTerminal",
       "autoAttachChildProcesses": false,
       "sourceMaps": true,
