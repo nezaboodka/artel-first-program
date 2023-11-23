@@ -4,7 +4,7 @@
   "description": "Первая программа на языке Артель",
   "devDependencies":
   {
-    "artel": "0.6.4"
+    "artel": "0.6.5"
   },
   "scripts":
   {
